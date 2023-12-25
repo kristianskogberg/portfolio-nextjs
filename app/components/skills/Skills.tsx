@@ -1,0 +1,96 @@
+"use client";
+
+import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import SkillItem from "./SkillItem";
+
+import JavaScriptIcon from "@/public/icons/javascript.png";
+import ReactIcon from "@/public/icons/react.png";
+import CPlusPlusIcon from "@/public/icons/cplusplus.png";
+import PythonIcon from "@/public/icons/python.png";
+import GitHubIcon from "@/public/icons/github.png";
+import CSSIcon from "@/public/icons/css.png";
+import TailwindIcon from "@/public/icons/tailwind.png";
+import FigmaIcon from "@/public/icons/figma.png";
+
+type Props = {};
+
+const title = "<skills>";
+
+const parentVariant = {
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2, duration: 1 },
+  },
+  hidden: { opacity: 0 },
+};
+
+const childVariant = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.75,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
+};
+
+export default function Skills({}: Props) {
+  return (
+    <div className="min-h-screen max-w-7xl mx-auto text-left justify-start items-center flex flex-col pt-[30px]">
+      <h2 className="text-m text-gray-500 tracking-wide py-6">{title}</h2>
+      <p className="pb-4">
+        I'm most experienced with the following technologies:
+      </p>
+
+      <motion.div
+        variants={parentVariant}
+        initial="hidden"
+        //animate={control}
+        //ref={ref}
+        whileInView={"visible"}
+        viewport={{
+          once: true,
+          amount: 0.1,
+        }}
+        className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8"
+      >
+        <motion.div variants={childVariant}>
+          <SkillItem image={ReactIcon} name={"React"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={JavaScriptIcon} name={"Javascript"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={CSSIcon} name={"CSS"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={CPlusPlusIcon} name={"C++"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={PythonIcon} name={"Python"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={GitHubIcon} name={"GitHub"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={TailwindIcon} name={"Tailwind CSS"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={FigmaIcon} name={"Figma"} />
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}

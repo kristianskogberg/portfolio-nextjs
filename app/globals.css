@@ -17,11 +17,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background-color: var(--bg-dark, #282424); */
+  color: var(--text-white, #ffffff);
+}
+
+h2 {
+  font-family: var(--font-fira-code);
+}
+
+h1 {
+  @apply text-white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
