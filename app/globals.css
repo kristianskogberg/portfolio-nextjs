@@ -32,3 +32,24 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  @apply bg-dark border border-gray-400 text-white  focus:ring-accent focus:border-accent block w-full p-3;
+}

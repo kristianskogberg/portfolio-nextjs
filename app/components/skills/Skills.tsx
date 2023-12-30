@@ -41,7 +41,7 @@ const childVariant = {
 
 export default function Skills({}: Props) {
   return (
-    <div className="min-h-screen max-w-7xl mx-auto text-left justify-start items-center flex flex-col pt-[30px]">
+    <div className=" max-w-7xl min-h-[50vh] mx-auto text-left justify-start items-start flex flex-col pt-[50px]">
       <h2 className="text-m text-gray-500 tracking-wide py-6">{title}</h2>
       <p className="pb-4">
         I'm most experienced with the following technologies:
@@ -57,7 +57,7 @@ export default function Skills({}: Props) {
           once: true,
           amount: 0.1,
         }}
-        className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8"
+        className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-x-16 text-center py-2"
       >
         <motion.div variants={childVariant}>
           <SkillItem image={ReactIcon} name={"React"} />

@@ -1,5 +1,6 @@
 "use client";
-import { Canvas, useFrame } from "@react-three/fiber";
+/*
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useEffect, useRef } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { useMotionValue, useSpring, useScroll } from "framer-motion";
@@ -15,7 +16,7 @@ export default function index({}: Props) {
   });
 
   return (
-    <div ref={container} className="h-[500px] w-[500px]">
+    <div ref={container} className="h-[250px] w-[250px]">
       <div className="sticky top-0"></div>
       <Canvas>
         <OrbitControls enableZoom={false} enablePan={false} />
@@ -58,3 +59,4 @@ function Cube() {
     </motion.mesh>
   );
 }
+*/

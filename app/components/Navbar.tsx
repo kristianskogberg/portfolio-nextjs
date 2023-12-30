@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="z-20 px-4 md:px-8 min-h-[50px] font-code  bg-dark/90 backdrop-blur-md fixed top-0 flex flex-col items-center justify-between mx-auto w-full">
+    <header className="z-20 px-4 md:px-8 min-h-[50px] font-code  bg-dark/90 backdrop-blur-md fixed top-0 flex flex-col items-center justify-between mx-auto w-full">
       <div className="flex flex-row justify-between mx-auto items-center w-full  max-w-7xl ">
         <div className="flex flex-row items-center ">
           <Link href="/">
@@ -46,13 +46,15 @@ export default function Navbar() {
         <div>
           {/* desktop links */}
 
-          <ul className="hidden md:flex ">
-            {navLinks.map((link, index) => (
-              <li key={index} className="px-6 hover:text-accent duration-200">
-                <Link href={link.to}>{link.text}</Link>
-              </li>
-            ))}
-          </ul>
+          <nav>
+            <ul className="hidden md:flex ">
+              {navLinks.map((link, index) => (
+                <li key={index} className="px-6 hover:text-accent duration-200">
+                  <Link href={link.to}>{link.text}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           {/* hamburger */}
           <div onClick={handleClick} className="md:hidden z-50 cursor-pointer">
@@ -63,7 +65,7 @@ export default function Navbar() {
       {/* mobile links */}
 
       {toggleMenu ? (
-        <div className="md:hidden w-full mobile-links-container">
+        <nav className="md:hidden w-full mobile-links-container">
           <ul>
             {navLinks.map((link, index) => (
               <li
@@ -76,8 +78,8 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       ) : null}
-    </nav>
+    </header>
   );
 }

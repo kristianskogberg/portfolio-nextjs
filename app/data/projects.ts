@@ -4,12 +4,14 @@ import NFTGraphImage from "@/public/project-screenshots/nftgraph.png";
 
 import PokeTypeImage from "@/public/project-screenshots/poketype.png";
 
-import GGMImage from "@/public/project-screenshots/ggm.png";
+import MyGroovyRecipes_1 from "@/public/project-screenshots/my-groovy-recipes-1.png";
+import MyGroovyRecipes_2 from "@/public/project-screenshots/my-groovy-recipes-2.png";
+import MyGroovyRecipes_3 from "@/public/project-screenshots/my-groovy-recipes-3.png";
 
 export const projectsData = [
   {
     title: "Pokéntial",
-    image: pokentialImage,
+    images: [pokentialImage],
     demo: "https://youtu.be/g1gF3X6rwUM",
     code: "https://github.com/kristianskogberg/pokential",
     description:
@@ -19,7 +21,7 @@ export const projectsData = [
 
   {
     title: "NFTGraph",
-    image: NFTGraphImage,
+    images: [NFTGraphImage],
     demo: "https://youtu.be/L82skPsRVE8",
     code: null,
     description:
@@ -28,20 +30,20 @@ export const projectsData = [
   },
   {
     title: "PokeType",
-    image: PokeTypeImage,
+    images: [PokeTypeImage, PokeTypeImage],
     demo: "https://play.google.com/store/apps/details?id=com.pgkrsk.pokemontypecalculator&hl=en&gl=US",
     code: "https://github.com/kristianskogberg/poketype",
     description:
-      "A mobile app where users can search for any Pokémon and it will display and calculate useful information about that Pokémon based on its type. PokeType can be found on the Google Play Store.",
+      "A mobile app built with React Native. Users can search for any Pokémon and the application will display and calculate useful information about that Pokémon based on its type. I have released new updates and bug fixes to the app bases on user feedback. PokeType can be downloaded from Google Play Store for free.",
     skills: ["React Native", "REST API", "UI/UX Design", "Deployment"],
   },
   {
-    title: "Gas Monitoring Software",
-    image: GGMImage,
-    demo: "https://youtu.be/3wqPgbNJLXw",
-    code: null,
+    title: "My Groovy Recipes",
+    images: [MyGroovyRecipes_1, MyGroovyRecipes_2, MyGroovyRecipes_3],
+    demo: "",
+    code: "https://github.com/kristianskogberg/my-groovy-recipes",
     description:
-      "A desktop application where users are able to select some greenhouse gases from a specific time frame and the application will fetch selected data and draw graphs based on the returned data. I created this software with two other students during a Software Design course and we were given the highest grade for this project.",
-    skills: ["C++", "MVC", "Qt Creator", "Rest APIs", "Teamwork"],
+      "A recipe mobile app built with Flutter. Users can save, view, edit and remove their personal recipes, search and filter them based on the recipe names and tags and dynamically change the servings size.",
+    skills: ["Flutter", "Firebase", "Dart", "REST API", "UI/UX Design"],
   },
 ];

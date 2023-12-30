@@ -1,36 +1,43 @@
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React from "react";
-import Button from "../Button";
+import LinkButton from "../LinkButton";
 import { FaEye, FaCode } from "react-icons/fa";
+import ImageCarousel from "../ImageCarousel";
 
 type Project = {
   title: string;
-  image: StaticImageData;
+  images: StaticImageData[];
   demoUrl: string;
   codeUrl: string | null;
   description: string;
   skills: string[];
   imageOnRight?: boolean;
+  index: number;
 };
 
 export default function ProjectItem({
   title,
-  image,
+  images,
   demoUrl,
   codeUrl,
   description,
   skills,
+  index,
 }: Project) {
   return (
-    <div className="grid grid-cols-1 lg:flex flex-row pb-40 gap-10">
+    <div className={`grid grid-cols-1 lg:flex flex-row pb-40 gap-10 `}>
       {/* project image */}
-      <div className="">
-        <Image src={image} alt={`project ${title}`} quality={95} className="" />
+      <div
+        className={`lg:w-3/5 flex justify-center items-center ${
+          index % 2 !== 0 ? "order-1" : "order-1 lg:-order-1"
+        }`}
+      >
+        <ImageCarousel images={images} />
       </div>
 
       {/* project info */}
-      <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col gap-y-6 w-full lg:w-2/5">
         <h2 className="text-2xl sm:text-2xl font-bold ">{title}</h2>
         <div className=" flex flex-row justify-left items-center flex-wrap gap-6 ">
           {skills.map((skill) => (
@@ -39,11 +46,27 @@ export default function ProjectItem({
         </div>
         <p>{description}</p>
         <div className="flex flex-row flex-wrap gap-6">
-          <Button text="Demo Video" icon={<FaEye />} url={demoUrl} />
+          <LinkButton
+            text="Demo Video"
+            icon={<FaEye />}
+            url={demoUrl}
+            openInNewTab={true}
+          />
           {codeUrl == null ? (
-            <Button text="Private" icon={<FaCode />} disable={true} />
+            <LinkButton
+              text="Private"
+              icon={<FaCode />}
+              disable={true}
+              url=""
+              openInNewTab={true}
+            />
           ) : (
-            <Button text="Code" icon={<FaCode />} url={codeUrl} />
+            <LinkButton
+              text="Code"
+              icon={<FaCode />}
+              url={codeUrl}
+              openInNewTab={true}
+            />
           )}
         </div>
       </div>

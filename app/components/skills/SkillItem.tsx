@@ -11,7 +11,7 @@ export default function SkillItem({ name, image }: Skill) {
   return (
     <div className="py-4">
       <Image
-        className="w-20 mx-auto hover:scale-110 duration-[250ms]"
+        className="w-16 mx-auto hover:scale-110 duration-[250ms]"
         src={image}
         alt={name}
       />
