@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import React from "react";
+import React, { Fragment } from "react";
 import LinkButton from "../LinkButton";
 import { FaEye, FaCode } from "react-icons/fa";
 import ImageCarousel from "../ImageCarousel";
@@ -33,7 +33,11 @@ export default function ProjectItem({
           index % 2 !== 0 ? "order-1" : "order-1 lg:-order-1"
         }`}
       >
-        <ImageCarousel images={images} />
+        <Image
+          src={images[0]}
+          alt={title}
+          className="max-h-[600px] object-scale-down"
+        />
       </div>
 
       {/* project info */}
@@ -41,7 +45,9 @@ export default function ProjectItem({
         <h2 className="text-2xl sm:text-2xl font-bold ">{title}</h2>
         <div className=" flex flex-row justify-left items-center flex-wrap gap-6 ">
           {skills.map((skill) => (
-            <p className="font-code text-gray-400">{skill}</p>
+            <Fragment key={skill}>
+              <p className="font-code text-gray-400">{skill}</p>
+            </Fragment>
           ))}
         </div>
         <p>{description}</p>

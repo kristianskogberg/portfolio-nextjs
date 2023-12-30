@@ -35,12 +35,9 @@ export default function TextTypingAnimation({
       ease: ease ? ease : "easeInOut",
       delay: delay ? delay : 0,
     });
-    return controls.stop;
-  }, [duration, delay, text.length]);
 
-  return (
-    <span className="">
-      <motion.span>{displayText}</motion.span>
-    </span>
-  );
+    return () => controls.stop();
+  }, [count, duration, delay, ease, text.length]);
+
+  return <motion.span>{displayText}</motion.span>;
 }

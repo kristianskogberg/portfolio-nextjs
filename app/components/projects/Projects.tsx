@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { projectsData } from "@/app/data/projects";
 import ProjectItem from "./ProjectItem";
 
@@ -13,16 +13,18 @@ export default function Projects({}: Props) {
       <p>Some of my recent projects:</p>
       <div className="py-6 ">
         {projectsData.map((project, key) => (
-          <ProjectItem
-            images={project.images}
-            imageOnRight={true}
-            title={project.title}
-            description={project.description}
-            demoUrl={project.demo}
-            codeUrl={project.code}
-            skills={project.skills}
-            index={key}
-          />
+          <Fragment key={key}>
+            <ProjectItem
+              images={project.images}
+              imageOnRight={true}
+              title={project.title}
+              description={project.description}
+              demoUrl={project.demo}
+              codeUrl={project.code}
+              skills={project.skills}
+              index={key}
+            />
+          </Fragment>
         ))}
       </div>
     </div>
