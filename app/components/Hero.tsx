@@ -40,11 +40,11 @@ export default function Hero({}: Props) {
         <h2 className="text-m text-gray-500 tracking-wide">
           <TextTypingAnimation text="Hi, my name is" delay={0} ease="easeIn" />
         </h2>
-        <h1 className="text-4xl md:text-5xl font-bold py-4 text-white">
+        <h1 className="text-3xl md:text-5xl font-bold py-4 text-white">
           <span>
             <TextTypingAnimation
               text="Kristian Skogberg"
-              delay={0.8}
+              delay={0.9}
               duration={2}
               ease="easeOut"
             />
@@ -52,7 +52,7 @@ export default function Hero({}: Props) {
 
           {/*  <Cursor cursorColor="#02F8AE" /> */}
         </h1>
-        <h2 className="text-4xl md:text-5xl font-sans font-bold text-gray-400">
+        <h2 className="text-3xl md:text-5xl font-sans font-bold text-gray-400">
           <TextTypingAnimation
             text="I'm a Software Engineer"
             delay={2.4}

@@ -30,7 +30,7 @@ export const projectsData = [
   },
   {
     title: "PokeType",
-    images: [PokeTypeImage, PokeTypeImage],
+    images: [PokeTypeImage],
     demo: "https://play.google.com/store/apps/details?id=com.pgkrsk.pokemontypecalculator&hl=en&gl=US",
     code: "https://github.com/kristianskogberg/poketype",
     description:
@@ -39,7 +39,7 @@ export const projectsData = [
   },
   {
     title: "My Groovy Recipes",
-    images: [MyGroovyRecipes_1, MyGroovyRecipes_2, MyGroovyRecipes_3],
+    images: [MyGroovyRecipes_3],
     demo: "",
     code: "https://github.com/kristianskogberg/my-groovy-recipes",
     description:
