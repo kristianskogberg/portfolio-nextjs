@@ -12,13 +12,14 @@ const title = "<about>";
 export default function About({}: Props) {
   return (
     <div className="max-w-7xl min-h-[67vh] h-full w-full mx-auto text-left justify-start items-start flex flex-col pt-[50px]">
-      <h2 className="text-m text-gray-500 tracking-wide pt-6">{title}</h2>
+      <h2 className="py-6">About</h2>
       <div className="flex flex-col lg:flex-row w-full items-start lg:items-center gap-6">
         <div className="max-w-[700px] h-full w-full">
-          <motion.h1 className="text-4xl sm:text-4xl font-bold text-primary py-10">
-            Hi, I'm Krisu. Nice to meet you!
-          </motion.h1>
-
+          <motion.p className="">
+            Hi, I'm <span className="text-accent">Krisu</span>. Nice to meet
+            you!
+          </motion.p>
+          <br />
           <p>
             I like <span className="text-accent">building</span> software and{" "}
             <span className="text-accent">applications</span> and that both{" "}

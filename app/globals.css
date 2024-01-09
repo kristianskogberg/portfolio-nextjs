@@ -22,7 +22,8 @@ body {
 }
 
 h2 {
-  font-family: var(--font-fira-code);
+  /* font-family: var(--font-fira-code); */
+  @apply text-2xl sm:text-2xl font-bold font-sans;
 }
 
 h1 {

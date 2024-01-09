@@ -15,8 +15,6 @@ import FigmaIcon from "@/public/icons/figma.png";
 
 type Props = {};
 
-const title = "<skills>";
-
 const parentVariant = {
   visible: {
     opacity: 1,
@@ -42,7 +40,7 @@ const childVariant = {
 export default function Skills({}: Props) {
   return (
     <div className=" max-w-7xl min-h-[50vh] mx-auto text-left justify-start items-start flex flex-col pt-[50px]">
-      <h2 className="text-m text-gray-500 tracking-wide py-6">{title}</h2>
+      <h2 className="py-6">Skills</h2>
       <p className="pb-4">
         I'm most experienced with the following technologies:
       </p>

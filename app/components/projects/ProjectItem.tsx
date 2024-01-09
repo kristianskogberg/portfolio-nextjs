@@ -42,7 +42,7 @@ export default function ProjectItem({
 
       {/* project info */}
       <div className="flex flex-col gap-y-6 w-full lg:w-2/5">
-        <h2 className="text-2xl sm:text-2xl font-bold ">{title}</h2>
+        <h2 className="text-2xl sm:text-2xl font-bold font-sans">{title}</h2>
         <div className=" flex flex-row justify-left items-center flex-wrap gap-6 ">
           {skills.map((skill) => (
             <Fragment key={skill}>

@@ -16,13 +16,11 @@ const parentVariant = {
   hidden: { opacity: 0 },
 };
 
-const title = "<contact>";
-
 export default function Contact({}: Props) {
   return (
     <div className=" max-w-7xl min-h-screen mx-auto text-left justify-between items-start flex flex-col pt-[50px]">
       <div className="flex flex-col w-full h-full">
-        <h2 className="text-m text-gray-500 tracking-wide py-6">{title}</h2>
+        <h2 className="py-6">Contact</h2>
         <motion.p
           className="text-gray-300 py-4"
           variants={parentVariant}

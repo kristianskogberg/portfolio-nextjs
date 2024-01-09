@@ -37,10 +37,10 @@ export default function Hero({}: Props) {
       <div>
         {/*  <GridBackground /> */}
 
-        <h2 className="text-m text-gray-500 tracking-wide">
+        <h3 className="text-m text-gray-500 tracking-wide">
           <TextTypingAnimation text="Hi, my name is" delay={0} ease="easeIn" />
-        </h2>
-        <h1 className="text-3xl md:text-5xl font-bold py-4 text-white">
+        </h3>
+        <h1 className="text-3xl md:text-5xl font-bold py-4 md:py-6 text-white">
           <span>
             <TextTypingAnimation
               text="Kristian Skogberg"
