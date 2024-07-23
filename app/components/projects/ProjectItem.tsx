@@ -53,7 +53,7 @@ export default function ProjectItem({
         <p>{description}</p>
         <div className="flex flex-row flex-wrap gap-6">
           <LinkButton
-            text="Demo Video"
+            text="Demo"
             icon={<FaEye />}
             url={demoUrl}
             openInNewTab={true}
