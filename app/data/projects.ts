@@ -40,7 +40,7 @@ export const projectsData = [
   {
     title: "My Groovy Recipes",
     images: [MyGroovyRecipes_3],
-    demo: "",
+    demo: "https://youtu.be/5-VNVc6HHUE",
     code: "https://github.com/kristianskogberg/my-groovy-recipes",
     description:
       "A recipe mobile app built with Flutter. Users can save, view, edit and remove their personal recipes, search and filter them based on the recipe names and tags and dynamically change the servings size.",
