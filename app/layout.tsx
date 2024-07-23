@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${fira_code.variable}`}>
-      <body className="h-dvh flex flex-col w-full">
+      <body>
         <Navbar />
         <GridBackground />
         {children}
