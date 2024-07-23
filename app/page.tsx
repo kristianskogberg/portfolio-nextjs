@@ -6,7 +6,7 @@ import Contact from "./components/contact/Contact";
 
 export default function Home() {
   return (
-    <main className="h-lvh scrollbar px-4 md:px-8 scrollbar-track-gray-400/20 scrollbar-thumb-accent/80">
+    <main className="h-screen scrollbar px-4 md:px-8 scrollbar-track-gray-400/20 scrollbar-thumb-accent/80">
       <section id="home">
         <Hero />
       </section>
