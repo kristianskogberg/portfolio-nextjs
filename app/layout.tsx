@@ -8,7 +8,8 @@ import GridBackground from "./components/GridBackground";
 
 export const metadata: Metadata = {
   title: "Kristian Skogberg - Portfolio",
-  description: "Kristian Skogberg's software engineering portfolio",
+  description:
+    "I'm studying for a Master's Degree specializing in Software Engineering at Tampere University. I like building useful apps with clean UIs.",
 };
 
 export default function RootLayout({

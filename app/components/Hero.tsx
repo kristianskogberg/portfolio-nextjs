@@ -66,7 +66,7 @@ export default function Hero({}: Props) {
           className="py-8 max-w-[700px]"
         >
           I'm studying for a Master's Degree specializing in Software
-          Development at Tampere University. I like building useful apps with
+          Engineering at Tampere University. I like building useful apps with
           clean UIs.
         </motion.p>
 
