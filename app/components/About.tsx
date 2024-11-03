@@ -43,7 +43,8 @@ export default function About({}: Props) {
             I have a Bachelor's Degree in Information Technology. Currently, I'm
             studying for a <span className="text-accent">Master's Degree</span>{" "}
             specializing in{" "}
-            <span className="text-accent">Software Engineering</span>.
+            <span className="text-accent">Software Engineering</span> and I'm
+            writing my thesis on how LLMs can be used to generate UI code.
           </p>
         </div>
 
