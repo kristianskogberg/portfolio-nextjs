@@ -19,6 +19,21 @@
 body {
   /* background-color: var(--bg-dark, #282424); */
   color: var(--text-white, #ffffff);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  z-index: -50;
+  background-color: #1a1a1a; /* same as bg-dark in tailwind.config */
+  background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+    linear-gradient(to bottom, #80808012 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-attachment: fixed;
+  background-position: top left;
+  min-height: 100vh;
 }
 
 h2 {
