@@ -12,7 +12,7 @@ type Props = {};
 const fadeVariant = {
   visible: {
     opacity: 1,
-    transition: { delay: 4, duration: 1 },
+    transition: { delay: 5.1, duration: 1 },
   },
   hidden: { opacity: 0 },
 };
@@ -21,7 +21,7 @@ const parentVariant = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { delay: 3, duration: 1 },
+    transition: { delay: 4.5, duration: 1 },
   },
   hidden: { opacity: 0, y: 10 },
 };
@@ -38,15 +38,14 @@ export default function Hero({}: Props) {
         {/*  <GridBackground /> */}
 
         <h3 className="text-m text-gray-500 tracking-wide">
-          <TextTypingAnimation text="Hi, my name is" delay={0} ease="easeIn" />
+          <TextTypingAnimation text="Hi, my name is" />
         </h3>
         <h1 className="text-3xl md:text-5xl font-bold py-4 md:py-6 text-white">
           <span>
             <TextTypingAnimation
               text="Kristian Skogberg"
-              delay={0.9}
+              delay={0.8}
               duration={2}
-              ease="easeOut"
             />
           </span>
 
@@ -55,7 +54,7 @@ export default function Hero({}: Props) {
         <h2 className="text-3xl md:text-5xl font-sans font-bold text-gray-400">
           <TextTypingAnimation
             text="I'm a Software Engineer"
-            delay={2.4}
+            delay={2.7}
             duration={2}
           />
         </h2>
