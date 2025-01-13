@@ -1,14 +1,9 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-
-import { Model } from "./cube/cube";
+import { motion } from "framer-motion";
+import React from "react";
 
 type Props = {};
-
-const title = "<about>";
 
 const parentVariant = {
   visible: {
@@ -74,9 +69,8 @@ export default function About({}: Props) {
         >
           <p>
             I like to spend my free time working on my personal projects, going
-            to the gym, cycling and playing Pokémon GO. I also enjoy video
-            editing and creating 3D renders and animations. I'm interested in
-            blockchain, Web3 and NFTs.
+            to the gym, cycling and gaming. I also enjoy video editing and
+            creating trailers, 3D renders and animations.
           </p>
         </motion.div>
 

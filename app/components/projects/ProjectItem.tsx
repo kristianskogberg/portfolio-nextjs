@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { Fragment } from "react";
 import LinkButton from "../LinkButton";
 import { FaEye, FaCode } from "react-icons/fa";
-import ImageCarousel from "../ImageCarousel";
 
 type Project = {
   title: string;
@@ -14,6 +13,28 @@ type Project = {
   skills: string[];
   imageOnRight?: boolean;
   index: number;
+};
+
+const parentVariant = {
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2, duration: 1 },
+  },
+  hidden: { opacity: 0 },
+};
+
+const childVariant = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.75,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
 };
 
 export default function ProjectItem({
