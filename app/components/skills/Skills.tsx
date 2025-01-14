@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import SkillItem from "./SkillItem";
 
-import JavaScriptIcon from "@/public/icons/javascript.png";
+import TypeScriptIcon from "@/public/icons/typescript.png";
 import ReactIcon from "@/public/icons/react.png";
 import CPlusPlusIcon from "@/public/icons/cplusplus.png";
 import PythonIcon from "@/public/icons/python.png";
-import GitHubIcon from "@/public/icons/github.png";
-import CSSIcon from "@/public/icons/css.png";
+import NodejsIcon from "@/public/icons/nodejsicon.png";
 import TailwindIcon from "@/public/icons/tailwind.png";
 import FigmaIcon from "@/public/icons/figma.png";
+import FlutterIcon from "@/public/icons/flutter.png";
 
 type Props = {};
 
@@ -62,15 +62,11 @@ export default function Skills({}: Props) {
         </motion.div>
 
         <motion.div variants={childVariant}>
-          <SkillItem image={JavaScriptIcon} name={"Javascript"} />
+          <SkillItem image={TypeScriptIcon} name={"TypeScript"} />
         </motion.div>
 
         <motion.div variants={childVariant}>
-          <SkillItem image={CSSIcon} name={"CSS"} />
-        </motion.div>
-
-        <motion.div variants={childVariant}>
-          <SkillItem image={CPlusPlusIcon} name={"C++"} />
+          <SkillItem image={NodejsIcon} name={"Node.js"} />
         </motion.div>
 
         <motion.div variants={childVariant}>
@@ -78,7 +74,11 @@ export default function Skills({}: Props) {
         </motion.div>
 
         <motion.div variants={childVariant}>
-          <SkillItem image={GitHubIcon} name={"GitHub"} />
+          <SkillItem image={CPlusPlusIcon} name={"C++"} />
+        </motion.div>
+
+        <motion.div variants={childVariant}>
+          <SkillItem image={FigmaIcon} name={"Figma"} />
         </motion.div>
 
         <motion.div variants={childVariant}>
@@ -86,7 +86,7 @@ export default function Skills({}: Props) {
         </motion.div>
 
         <motion.div variants={childVariant}>
-          <SkillItem image={FigmaIcon} name={"Figma"} />
+          <SkillItem image={FlutterIcon} name={"Flutter"} />
         </motion.div>
       </motion.div>
     </div>
